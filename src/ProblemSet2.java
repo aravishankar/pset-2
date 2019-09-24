@@ -82,16 +82,45 @@ public class ProblemSet2 {
         // System.out.printf("QUARTERS : %.0f\n", quartersNeeded);
         // System.out.printf("DIMES    : %.0f\n", dimesNeeded);
         // System.out.printf("NICKELS  : %.0f\n", nickelsNeeded);
-        // System.out.printf("PENNIES  : %.0f\n", penniesNeeded);
+        // System.out.printf("PENNIES  : %.0f\n\n", penniesNeeded);
 
 
         /*
-         * Exercise 3.
+         * Exercise 3. GOOD
          * 
          * Given a dollar amount in the range [0.00, 20.00], print the smallest number of
          * bills and coins needed to produce this amount.
          */
 
+        // final double valueTwentyDollar = 20.00;
+        // final double valueTenDollar = 10.00;
+        // final double valueFiveDollar = 5.00;
+
+        // System.out.print("Enter a dollar amount: ");
+        // dollarAmount = in.nextDouble();
+        // value = dollarAmount;
+
+        // double twentiesNeeded = Math.floor(value/valueTwentyDollar);
+        // value -= twentiesNeeded*valueTwentyDollar;
+        // double tensNeeded = Math.floor(value/valueTenDollar);
+        // value -= tensNeeded*valueTenDollar;
+        // double fivesNeeded = Math.floor(value/valueFiveDollar);
+        // value -= fivesNeeded*valueFiveDollar;
+        // dollarsNeeded = Math.floor(value/valueDollar);
+        // value -= dollarsNeeded*valueDollar;
+        // quartersNeeded = Math.floor(value/valueQuarter);
+        // value -= quartersNeeded*valueQuarter;
+        // dimesNeeded = Math.floor(value/valueDime);
+        // value -= dimesNeeded*valueDime;
+        // nickelsNeeded = Math.floor(value/valueNickel);
+        // value -= nickelsNeeded*valueNickel;
+        // penniesNeeded = Math.floor(value/0.01);
+
+        // double billsNeeded = twentiesNeeded+tensNeeded+fivesNeeded+dollarsNeeded;
+        // double coinsNeeded = quartersNeeded+dimesNeeded+nickelsNeeded+penniesNeeded;
+
+        // System.out.printf("\nBILLS : %.0f\n", billsNeeded);
+        // System.out.printf("COINS : %.0f\n\n", coinsNeeded);
 
 
         /*
@@ -101,7 +130,8 @@ public class ProblemSet2 {
          * and inches.
          */
 
-
+        // double mileToInches = 63360;
+        // double 
         
         /*
          * Exercise 5.
