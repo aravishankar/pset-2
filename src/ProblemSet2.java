@@ -22,21 +22,67 @@ public class ProblemSet2 {
         Scanner in = new Scanner(System.in);
 
         /*
-         * Exercise 1.
+         * Exercise 1. GOOD
          * 
          * Prompt the user to enter the following information (in order): first name, last
          * name, grade, age, and hometown.
          */
 
-        
+        // System.out.print("\nEnter your first name: ");
+        // String firstName = in.nextLine();
+        // System.out.print("Enter your last name: ");
+        // String lastName = in.nextLine();
+        // System.out.print("Enter your grade: ");
+        // String grade = in.nextLine();
+        // System.out.print("Enter your age: ");
+        // String age = in.nextLine();
+        // System.out.print("Enter your hometown: ");
+        // String hometown = in.nextLine();
+
+        // System.out.printf("\nNAME     : %s %s\n", firstName, lastName);
+        // System.out.printf("GRADE    : %s\n", grade);
+        // System.out.printf("AGE      : %s\n", age);
+        // System.out.printf("HOMETOWN : %s\n", hometown);
+
+
+        // System.out.println(firstName);
+        // System.out.println(lastName);
+        // System.out.println(grade);
+        // System.out.println(age);
+        // System.out.println(hometown);
+
         
         /*
-         * Exercise 2.
+         * Exercise 2. GOOD
          * 
          * Given a dollar amount in the range [0.00, 1.00], print the number of dollar
          * bills, quarters, dimes, nickels, and pennies needed to produce this amount.
          */
 
+        // final double valueDollar = 1.00;
+        // final double valueQuarter = 0.25;
+        // final double valueDime = 0.10;
+        // final double valueNickel = 0.05;
+
+        // System.out.print("Enter a dollar amount: ");
+        // double dollarAmount = in.nextDouble();
+        // double value = dollarAmount;
+
+        // double dollarsNeeded = Math.floor(dollarAmount);
+        // value -= dollarsNeeded*valueDollar;
+        // double quartersNeeded = Math.floor(value/valueQuarter);
+        // value -= quartersNeeded*valueQuarter;
+        // double dimesNeeded = Math.floor(value/valueDime);
+        // value -= dimesNeeded*valueDime;
+        // double nickelsNeeded = Math.floor(value/valueNickel);
+        // value -= nickelsNeeded*valueNickel;
+        // double penniesNeeded = Math.floor(value/0.01);
+
+        // System.out.printf("\nDOLLARS  : %.0f\n", dollarsNeeded);
+        // System.out.printf("QUARTERS : %.0f\n", quartersNeeded);
+        // System.out.printf("DIMES    : %.0f\n", dimesNeeded);
+        // System.out.printf("NICKELS  : %.0f\n", nickelsNeeded);
+        // System.out.printf("PENNIES  : %.0f\n", penniesNeeded);
 
 
         /*
@@ -67,12 +113,20 @@ public class ProblemSet2 {
 
         
         /*
-         * Exercise 6.
+         * Exercise 6. GOOD
          * 
          * Given a diameter, print the area and circumference of the corresponding circle.
          */
         
+        // System.out.print("Enter a diameter: ");
+        // double diameter = in.nextDouble();
+        // double radius = diameter/2;
 
+        // double circleArea = Math.PI*Math.pow(radius, 2);
+        // double circleCircumference = 2*Math.PI*radius;
+
+        // System.out.printf("AREA          : %.2f\n", circleArea);
+        // System.out.printf("CIRCUMFERENCE : %.2f\n", circleCircumference);
 
         /*
          * Exercise 7.
