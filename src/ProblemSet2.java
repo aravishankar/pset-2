@@ -22,7 +22,7 @@ public class ProblemSet2 {
         Scanner in = new Scanner(System.in);
 
         /*
-         * Exercise 1. GOOD
+         * Exercise 1.
          * 
          * Prompt the user to enter the following information (in order): first name, last
          * name, grade, age, and hometown.
@@ -45,29 +45,28 @@ public class ProblemSet2 {
         System.out.printf("HOMETOWN : %s\n", hometown);
         
         /*
-         * Exercise 2. GOOD
+         * Exercise 2.
          * 
          * Given a dollar amount in the range [0.00, 1.00], print the number of dollar
          * bills, quarters, dimes, nickels, and pennies needed to produce this amount.
          */
 
-        final double valueDollar = 1.00;
-        final double valueQuarter = 0.25;
-        final double valueDime = 0.10;
-        final double valueNickel = 0.05;
+        final double VALUE_DOLLAR = 1.00;
+        final double VALUE_QUARTER = 0.25;
+        final double VALUE_DIME = 0.10;
+        final double VALUE_NICKEL = 0.05;
 
         System.out.print("\nEnter a dollar amount: ");
-        double dollarAmount = in.nextDouble();
-        double value = dollarAmount;
+        double value = in.nextDouble();
 
-        double dollarsNeeded = Math.floor(dollarAmount);
-        value -= dollarsNeeded*valueDollar;
-        double quartersNeeded = Math.floor(value/valueQuarter);
-        value -= quartersNeeded*valueQuarter;
-        double dimesNeeded = Math.floor(value/valueDime);
-        value -= dimesNeeded*valueDime;
-        double nickelsNeeded = Math.floor(value/valueNickel);
-        value -= nickelsNeeded*valueNickel;
+        double dollarsNeeded = Math.floor(value/VALUE_DOLLAR);
+        value -= dollarsNeeded*VALUE_DOLLAR;
+        double quartersNeeded = Math.floor(value/VALUE_QUARTER);
+        value -= quartersNeeded*VALUE_QUARTER;
+        double dimesNeeded = Math.floor(value/VALUE_DIME);
+        value -= dimesNeeded*VALUE_DIME;
+        double nickelsNeeded = Math.floor(value/VALUE_NICKEL);
+        value -= nickelsNeeded*VALUE_NICKEL;
         double penniesNeeded = Math.floor(value/0.01);
 
         System.out.printf("\nDOLLARS  : %.0f\n", dollarsNeeded);
@@ -76,36 +75,34 @@ public class ProblemSet2 {
         System.out.printf("NICKELS  : %.0f\n", nickelsNeeded);
         System.out.printf("PENNIES  : %.0f\n\n", penniesNeeded);
 
-
         /*
-         * Exercise 3. GOOD
+         * Exercise 3.
          * 
          * Given a dollar amount in the range [0.00, 20.00], print the smallest number of
          * bills and coins needed to produce this amount.
          */
 
-        final double valueTwentyDollar = 20.00;
-        final double valueTenDollar = 10.00;
-        final double valueFiveDollar = 5.00;
+        final double VALUE_TWENTY_DOLLAR = 20.00;
+        final double VALUE_TEN_DOLLAR = 10.00;
+        final double VALUE_FIVE_DOLLAR = 5.00;
 
         System.out.print("Enter a dollar amount: ");
-        dollarAmount = in.nextDouble();
-        value = dollarAmount;
+        value = in.nextDouble();
 
-        double twentiesNeeded = Math.floor(value/valueTwentyDollar);
-        value -= twentiesNeeded*valueTwentyDollar;
-        double tensNeeded = Math.floor(value/valueTenDollar);
-        value -= tensNeeded*valueTenDollar;
-        double fivesNeeded = Math.floor(value/valueFiveDollar);
-        value -= fivesNeeded*valueFiveDollar;
-        dollarsNeeded = Math.floor(value/valueDollar);
-        value -= dollarsNeeded*valueDollar;
-        quartersNeeded = Math.floor(value/valueQuarter);
-        value -= quartersNeeded*valueQuarter;
-        dimesNeeded = Math.floor(value/valueDime);
-        value -= dimesNeeded*valueDime;
-        nickelsNeeded = Math.floor(value/valueNickel);
-        value -= nickelsNeeded*valueNickel;
+        double twentiesNeeded = Math.floor(value/VALUE_TWENTY_DOLLAR);
+        value -= twentiesNeeded*VALUE_TWENTY_DOLLAR;
+        double tensNeeded = Math.floor(value/VALUE_TEN_DOLLAR);
+        value -= tensNeeded*VALUE_TEN_DOLLAR;
+        double fivesNeeded = Math.floor(value/VALUE_FIVE_DOLLAR);
+        value -= fivesNeeded*VALUE_FIVE_DOLLAR;
+        dollarsNeeded = Math.floor(value/VALUE_DOLLAR);
+        value -= dollarsNeeded*VALUE_DOLLAR;
+        quartersNeeded = Math.floor(value/VALUE_QUARTER);
+        value -= quartersNeeded*VALUE_QUARTER;
+        dimesNeeded = Math.floor(value/VALUE_DIME);
+        value -= dimesNeeded*VALUE_DIME;
+        nickelsNeeded = Math.floor(value/VALUE_NICKEL);
+        value -= nickelsNeeded*VALUE_NICKEL;
         penniesNeeded = Math.floor(value/0.01);
 
         double billsNeeded = twentiesNeeded+tensNeeded+fivesNeeded+dollarsNeeded;
@@ -114,9 +111,8 @@ public class ProblemSet2 {
         System.out.printf("\nBILLS : %.0f\n", billsNeeded);
         System.out.printf("COINS : %.0f\n\n", coinsNeeded);
 
-
         /*
-         * Exercise 4. GOOD
+         * Exercise 4.
          * 
          * Given a number of inches, print the equivalent number of miles, yards, feet,
          * and inches.
@@ -140,11 +136,9 @@ public class ProblemSet2 {
         System.out.printf("YARDS  : %.0f\n", yards);
         System.out.printf("FEET   : %.0f\n", feet);
         System.out.printf("INCHES : %.0f\n\n", inches);
-        
-
 
         /*
-         * Exercise 5. GOOD
+         * Exercise 5.
          * 
          * Given a number of centimeters, print the equivalent number of kilometers,
          * meters, and centimeters.
@@ -166,7 +160,7 @@ public class ProblemSet2 {
         System.out.printf("CENTIMETERS : %.0f\n\n", centimeters);
         
         /*
-         * Exercise 6. GOOD
+         * Exercise 6.
          * 
          * Given a diameter, print the area and circumference of the corresponding circle.
          */
@@ -202,7 +196,7 @@ public class ProblemSet2 {
         System.out.printf("DIAGONAL  : %.2f\n\n", rectDiagonal);
         
         /*
-         * Exercise 8. GOOD
+         * Exercise 8.
          * 
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
@@ -217,7 +211,7 @@ public class ProblemSet2 {
         System.out.printf("PERIMETER : %.2f\n\n", hexPerimeter);
         
         /*
-         * Exercise 9. GOOD
+         * Exercise 9.
          * 
          * Given a string, reverse and print the first and second halves of that string.
          */
@@ -233,7 +227,7 @@ public class ProblemSet2 {
         System.out.println("\n" + secondHalf+firstHalf + "\n");
         
         /*
-         * Exercise 10. GOOD
+         * Exercise 10.
          * 
          * Given a first, middle, and last name, print the corresponding initials.
          */
@@ -245,8 +239,8 @@ public class ProblemSet2 {
         System.out.print("Enter your last name: ");
         String lname = in.next();
 
-        System.out.println("\n" + fname.substring(0,1) + mname.substring(0,1) + lname.substring(0,1) + "\n");
-
+        System.out.println("\n" + fname.substring(0,1) + mname.substring(0,1) 
+            + lname.substring(0,1) + "\n");
         
         in.close();
     }
