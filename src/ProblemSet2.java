@@ -97,7 +97,7 @@ public class ProblemSet2 {
         // final double valueFiveDollar = 5.00;
 
         // System.out.print("Enter a dollar amount: ");
-        // dollarAmount = in.nextDouble();
+        // double dollarAmount = in.nextDouble();
         // value = dollarAmount;
 
         // double twentiesNeeded = Math.floor(value/valueTwentyDollar);
@@ -124,23 +124,54 @@ public class ProblemSet2 {
 
 
         /*
-         * Exercise 4.
+         * Exercise 4. GOOD
          * 
          * Given a number of inches, print the equivalent number of miles, yards, feet,
          * and inches.
          */
 
-        // double mileToInches = 63360;
-        // double 
+        // final double MILES_TO_INCHES = 63360;
+        // final double YARDS_TO_INCHES = 36;
+        // final double FEET_TO_INCHES = 12;
+
+        // System.out.print("Enter a number of inches: ");
+        // double inches = in.nextDouble();
+
+        // double miles = Math.floor(inches/MILES_TO_INCHES);
+        // inches -= miles*MILES_TO_INCHES;
+        // double yards = Math.floor(inches/YARDS_TO_INCHES);
+        // inches -= yards*YARDS_TO_INCHES;
+        // double feet = Math.floor(inches/FEET_TO_INCHES);
+        // inches -= feet*FEET_TO_INCHES;
         
+        // System.out.printf("\nMILES  : %.0f\n", miles);
+        // System.out.printf("YARDS  : %.0f\n", yards);
+        // System.out.printf("FEET   : %.0f\n", feet);
+        // System.out.printf("INCHES : %.0f\n\n", inches);
+        
+
+
         /*
-         * Exercise 5.
+         * Exercise 5. GOOD
          * 
          * Given a number of centimeters, print the equivalent number of kilometers,
          * meters, and centimeters.
          */
         
+        // final double KILOMETERS_TO_CENTIMETERS = 100000;
+        // final double METERS_TO_CENTIMETERS = 100;
 
+        // System.out.print("Enter a number of centimeters: ");
+        // double centimeters = in.nextDouble();
+
+        // double kilometers = Math.floor(centimeters/KILOMETERS_TO_CENTIMETERS);
+        // centimeters -= kilometers*KILOMETERS_TO_CENTIMETERS;
+        // double meters = Math.floor(centimeters/METERS_TO_CENTIMETERS);
+        // centimeters -= meters*METERS_TO_CENTIMETERS;
+
+        // System.out.printf("\nKILOMETERS  : %.0f\n", kilometers);
+        // System.out.printf("METERS      : %.0f\n", meters);
+        // System.out.printf("CENTIMETERS : %.0f\n\n", centimeters);
         
         /*
          * Exercise 6. GOOD
@@ -165,15 +196,33 @@ public class ProblemSet2 {
          * corresponding rectangle.
          */
         
+        // System.out.print("Enter a length: ");
+        // double rectLength = in.nextDouble();
+        // System.out.print("Enter a width: ");
+        // double rectWidth = in.nextDouble();
 
+        // double rectArea = rectLength*rectWidth;
+        // double rectPerimeter = 2*rectLength+2*rectWidth;
+        // double rectDiagonal = Math.hypot(rectLength, rectWidth);
+
+        // System.out.printf("\nAREA      : %.2f\n", rectArea);
+        // System.out.printf("PERIMETER : %.2f\n", rectPerimeter);
+        // System.out.printf("DIAGONAL  : %.2f\n\n", rectDiagonal);
         
         /*
-         * Exercise 8.
+         * Exercise 8. GOOD
          * 
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
         
+        // System.out.print("Enter a side length: ");
+        // double hexSide = in.nextDouble();
 
+        // double hexArea = (3*Math.sqrt(3))/2*Math.pow(hexSide,2);
+        // double hexPerimeter = 6*hexSide;
+
+        // System.out.printf("\nAREA      : %.2f\n", hexArea);
+        // System.out.printf("PERIMETER : %.2f\n\n", hexPerimeter);
         
         /*
          * Exercise 9.
@@ -181,14 +230,30 @@ public class ProblemSet2 {
          * Given a string, reverse and print the first and second halves of that string.
          */
         
+        System.out.print("Enter a String: ");
+        String userString = in.next();
 
+        int index = Math.round(userString.length()/2);
+        
+        String firstHalf = userString.substring(0,index);
+        String secondHalf = userString.substring(index);
+
+        System.out.println(secondHalf+firstHalf);
         
         /*
-         * Exercise 10.
+         * Exercise 10. GOOD
          * 
          * Given a first, middle, and last name, print the corresponding initials.
          */
         
+        // System.out.print("Enter your first name: ");
+        // String fname = in.next();
+        // System.out.print("Enter your middle name: ");
+        // String mname = in.next();
+        // System.out.print("Enter your last name: ");
+        // String lname = in.next();
+
+        // System.out.println(fname.substring(0,1) + mname.substring(0,1) + lname.substring(0,1));
 
         
         in.close();
