@@ -28,29 +28,21 @@ public class ProblemSet2 {
          * name, grade, age, and hometown.
          */
 
-        // System.out.print("\nEnter your first name: ");
-        // String firstName = in.nextLine();
-        // System.out.print("Enter your last name: ");
-        // String lastName = in.nextLine();
-        // System.out.print("Enter your grade: ");
-        // String grade = in.nextLine();
-        // System.out.print("Enter your age: ");
-        // String age = in.nextLine();
-        // System.out.print("Enter your hometown: ");
-        // String hometown = in.nextLine();
+        System.out.print("\nEnter your first name: ");
+        String firstName = in.nextLine();
+        System.out.print("Enter your last name: ");
+        String lastName = in.nextLine();
+        System.out.print("Enter your grade: ");
+        String grade = in.nextLine();
+        System.out.print("Enter your age: ");
+        String age = in.nextLine();
+        System.out.print("Enter your hometown: ");
+        String hometown = in.nextLine();
 
-        // System.out.printf("\nNAME     : %s %s\n", firstName, lastName);
-        // System.out.printf("GRADE    : %s\n", grade);
-        // System.out.printf("AGE      : %s\n", age);
-        // System.out.printf("HOMETOWN : %s\n", hometown);
-
-
-        // System.out.println(firstName);
-        // System.out.println(lastName);
-        // System.out.println(grade);
-        // System.out.println(age);
-        // System.out.println(hometown);
-
+        System.out.printf("\nNAME     : %s %s\n", firstName, lastName);
+        System.out.printf("GRADE    : %s\n", grade);
+        System.out.printf("AGE      : %s\n", age);
+        System.out.printf("HOMETOWN : %s\n", hometown);
         
         /*
          * Exercise 2. GOOD
@@ -59,30 +51,30 @@ public class ProblemSet2 {
          * bills, quarters, dimes, nickels, and pennies needed to produce this amount.
          */
 
-        // final double valueDollar = 1.00;
-        // final double valueQuarter = 0.25;
-        // final double valueDime = 0.10;
-        // final double valueNickel = 0.05;
+        final double valueDollar = 1.00;
+        final double valueQuarter = 0.25;
+        final double valueDime = 0.10;
+        final double valueNickel = 0.05;
 
-        // System.out.print("Enter a dollar amount: ");
-        // double dollarAmount = in.nextDouble();
-        // double value = dollarAmount;
+        System.out.print("\nEnter a dollar amount: ");
+        double dollarAmount = in.nextDouble();
+        double value = dollarAmount;
 
-        // double dollarsNeeded = Math.floor(dollarAmount);
-        // value -= dollarsNeeded*valueDollar;
-        // double quartersNeeded = Math.floor(value/valueQuarter);
-        // value -= quartersNeeded*valueQuarter;
-        // double dimesNeeded = Math.floor(value/valueDime);
-        // value -= dimesNeeded*valueDime;
-        // double nickelsNeeded = Math.floor(value/valueNickel);
-        // value -= nickelsNeeded*valueNickel;
-        // double penniesNeeded = Math.floor(value/0.01);
+        double dollarsNeeded = Math.floor(dollarAmount);
+        value -= dollarsNeeded*valueDollar;
+        double quartersNeeded = Math.floor(value/valueQuarter);
+        value -= quartersNeeded*valueQuarter;
+        double dimesNeeded = Math.floor(value/valueDime);
+        value -= dimesNeeded*valueDime;
+        double nickelsNeeded = Math.floor(value/valueNickel);
+        value -= nickelsNeeded*valueNickel;
+        double penniesNeeded = Math.floor(value/0.01);
 
-        // System.out.printf("\nDOLLARS  : %.0f\n", dollarsNeeded);
-        // System.out.printf("QUARTERS : %.0f\n", quartersNeeded);
-        // System.out.printf("DIMES    : %.0f\n", dimesNeeded);
-        // System.out.printf("NICKELS  : %.0f\n", nickelsNeeded);
-        // System.out.printf("PENNIES  : %.0f\n\n", penniesNeeded);
+        System.out.printf("\nDOLLARS  : %.0f\n", dollarsNeeded);
+        System.out.printf("QUARTERS : %.0f\n", quartersNeeded);
+        System.out.printf("DIMES    : %.0f\n", dimesNeeded);
+        System.out.printf("NICKELS  : %.0f\n", nickelsNeeded);
+        System.out.printf("PENNIES  : %.0f\n\n", penniesNeeded);
 
 
         /*
@@ -92,35 +84,35 @@ public class ProblemSet2 {
          * bills and coins needed to produce this amount.
          */
 
-        // final double valueTwentyDollar = 20.00;
-        // final double valueTenDollar = 10.00;
-        // final double valueFiveDollar = 5.00;
+        final double valueTwentyDollar = 20.00;
+        final double valueTenDollar = 10.00;
+        final double valueFiveDollar = 5.00;
 
-        // System.out.print("Enter a dollar amount: ");
-        // double dollarAmount = in.nextDouble();
-        // value = dollarAmount;
+        System.out.print("Enter a dollar amount: ");
+        dollarAmount = in.nextDouble();
+        value = dollarAmount;
 
-        // double twentiesNeeded = Math.floor(value/valueTwentyDollar);
-        // value -= twentiesNeeded*valueTwentyDollar;
-        // double tensNeeded = Math.floor(value/valueTenDollar);
-        // value -= tensNeeded*valueTenDollar;
-        // double fivesNeeded = Math.floor(value/valueFiveDollar);
-        // value -= fivesNeeded*valueFiveDollar;
-        // dollarsNeeded = Math.floor(value/valueDollar);
-        // value -= dollarsNeeded*valueDollar;
-        // quartersNeeded = Math.floor(value/valueQuarter);
-        // value -= quartersNeeded*valueQuarter;
-        // dimesNeeded = Math.floor(value/valueDime);
-        // value -= dimesNeeded*valueDime;
-        // nickelsNeeded = Math.floor(value/valueNickel);
-        // value -= nickelsNeeded*valueNickel;
-        // penniesNeeded = Math.floor(value/0.01);
+        double twentiesNeeded = Math.floor(value/valueTwentyDollar);
+        value -= twentiesNeeded*valueTwentyDollar;
+        double tensNeeded = Math.floor(value/valueTenDollar);
+        value -= tensNeeded*valueTenDollar;
+        double fivesNeeded = Math.floor(value/valueFiveDollar);
+        value -= fivesNeeded*valueFiveDollar;
+        dollarsNeeded = Math.floor(value/valueDollar);
+        value -= dollarsNeeded*valueDollar;
+        quartersNeeded = Math.floor(value/valueQuarter);
+        value -= quartersNeeded*valueQuarter;
+        dimesNeeded = Math.floor(value/valueDime);
+        value -= dimesNeeded*valueDime;
+        nickelsNeeded = Math.floor(value/valueNickel);
+        value -= nickelsNeeded*valueNickel;
+        penniesNeeded = Math.floor(value/0.01);
 
-        // double billsNeeded = twentiesNeeded+tensNeeded+fivesNeeded+dollarsNeeded;
-        // double coinsNeeded = quartersNeeded+dimesNeeded+nickelsNeeded+penniesNeeded;
+        double billsNeeded = twentiesNeeded+tensNeeded+fivesNeeded+dollarsNeeded;
+        double coinsNeeded = quartersNeeded+dimesNeeded+nickelsNeeded+penniesNeeded;
 
-        // System.out.printf("\nBILLS : %.0f\n", billsNeeded);
-        // System.out.printf("COINS : %.0f\n\n", coinsNeeded);
+        System.out.printf("\nBILLS : %.0f\n", billsNeeded);
+        System.out.printf("COINS : %.0f\n\n", coinsNeeded);
 
 
         /*
@@ -130,24 +122,24 @@ public class ProblemSet2 {
          * and inches.
          */
 
-        // final double MILES_TO_INCHES = 63360;
-        // final double YARDS_TO_INCHES = 36;
-        // final double FEET_TO_INCHES = 12;
+        final double MILES_TO_INCHES = 63360;
+        final double YARDS_TO_INCHES = 36;
+        final double FEET_TO_INCHES = 12;
 
-        // System.out.print("Enter a number of inches: ");
-        // double inches = in.nextDouble();
+        System.out.print("Enter a number of inches: ");
+        double inches = in.nextDouble();
 
-        // double miles = Math.floor(inches/MILES_TO_INCHES);
-        // inches -= miles*MILES_TO_INCHES;
-        // double yards = Math.floor(inches/YARDS_TO_INCHES);
-        // inches -= yards*YARDS_TO_INCHES;
-        // double feet = Math.floor(inches/FEET_TO_INCHES);
-        // inches -= feet*FEET_TO_INCHES;
+        double miles = Math.floor(inches/MILES_TO_INCHES);
+        inches -= miles*MILES_TO_INCHES;
+        double yards = Math.floor(inches/YARDS_TO_INCHES);
+        inches -= yards*YARDS_TO_INCHES;
+        double feet = Math.floor(inches/FEET_TO_INCHES);
+        inches -= feet*FEET_TO_INCHES;
         
-        // System.out.printf("\nMILES  : %.0f\n", miles);
-        // System.out.printf("YARDS  : %.0f\n", yards);
-        // System.out.printf("FEET   : %.0f\n", feet);
-        // System.out.printf("INCHES : %.0f\n\n", inches);
+        System.out.printf("\nMILES  : %.0f\n", miles);
+        System.out.printf("YARDS  : %.0f\n", yards);
+        System.out.printf("FEET   : %.0f\n", feet);
+        System.out.printf("INCHES : %.0f\n\n", inches);
         
 
 
@@ -158,20 +150,20 @@ public class ProblemSet2 {
          * meters, and centimeters.
          */
         
-        // final double KILOMETERS_TO_CENTIMETERS = 100000;
-        // final double METERS_TO_CENTIMETERS = 100;
+        final double KILOMETERS_TO_CENTIMETERS = 100000;
+        final double METERS_TO_CENTIMETERS = 100;
 
-        // System.out.print("Enter a number of centimeters: ");
-        // double centimeters = in.nextDouble();
+        System.out.print("Enter a number of centimeters: ");
+        double centimeters = in.nextDouble();
 
-        // double kilometers = Math.floor(centimeters/KILOMETERS_TO_CENTIMETERS);
-        // centimeters -= kilometers*KILOMETERS_TO_CENTIMETERS;
-        // double meters = Math.floor(centimeters/METERS_TO_CENTIMETERS);
-        // centimeters -= meters*METERS_TO_CENTIMETERS;
+        double kilometers = Math.floor(centimeters/KILOMETERS_TO_CENTIMETERS);
+        centimeters -= kilometers*KILOMETERS_TO_CENTIMETERS;
+        double meters = Math.floor(centimeters/METERS_TO_CENTIMETERS);
+        centimeters -= meters*METERS_TO_CENTIMETERS;
 
-        // System.out.printf("\nKILOMETERS  : %.0f\n", kilometers);
-        // System.out.printf("METERS      : %.0f\n", meters);
-        // System.out.printf("CENTIMETERS : %.0f\n\n", centimeters);
+        System.out.printf("\nKILOMETERS  : %.0f\n", kilometers);
+        System.out.printf("METERS      : %.0f\n", meters);
+        System.out.printf("CENTIMETERS : %.0f\n\n", centimeters);
         
         /*
          * Exercise 6. GOOD
@@ -179,15 +171,15 @@ public class ProblemSet2 {
          * Given a diameter, print the area and circumference of the corresponding circle.
          */
         
-        // System.out.print("Enter a diameter: ");
-        // double diameter = in.nextDouble();
-        // double radius = diameter/2;
+        System.out.print("Enter a diameter: ");
+        double diameter = in.nextDouble();
+        double radius = diameter/2;
 
-        // double circleArea = Math.PI*Math.pow(radius, 2);
-        // double circleCircumference = 2*Math.PI*radius;
+        double circleArea = Math.PI*Math.pow(radius, 2);
+        double circleCircumference = 2*Math.PI*radius;
 
-        // System.out.printf("AREA          : %.2f\n", circleArea);
-        // System.out.printf("CIRCUMFERENCE : %.2f\n", circleCircumference);
+        System.out.printf("\nAREA          : %.2f\n", circleArea);
+        System.out.printf("CIRCUMFERENCE : %.2f\n\n", circleCircumference);
 
         /*
          * Exercise 7.
@@ -196,18 +188,18 @@ public class ProblemSet2 {
          * corresponding rectangle.
          */
         
-        // System.out.print("Enter a length: ");
-        // double rectLength = in.nextDouble();
-        // System.out.print("Enter a width: ");
-        // double rectWidth = in.nextDouble();
+        System.out.print("Enter a length: ");
+        double rectLength = in.nextDouble();
+        System.out.print("Enter a width: ");
+        double rectWidth = in.nextDouble();
 
-        // double rectArea = rectLength*rectWidth;
-        // double rectPerimeter = 2*rectLength+2*rectWidth;
-        // double rectDiagonal = Math.hypot(rectLength, rectWidth);
+        double rectArea = rectLength*rectWidth;
+        double rectPerimeter = 2*rectLength+2*rectWidth;
+        double rectDiagonal = Math.hypot(rectLength, rectWidth);
 
-        // System.out.printf("\nAREA      : %.2f\n", rectArea);
-        // System.out.printf("PERIMETER : %.2f\n", rectPerimeter);
-        // System.out.printf("DIAGONAL  : %.2f\n\n", rectDiagonal);
+        System.out.printf("\nAREA      : %.2f\n", rectArea);
+        System.out.printf("PERIMETER : %.2f\n", rectPerimeter);
+        System.out.printf("DIAGONAL  : %.2f\n\n", rectDiagonal);
         
         /*
          * Exercise 8. GOOD
@@ -215,17 +207,17 @@ public class ProblemSet2 {
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
         
-        // System.out.print("Enter a side length: ");
-        // double hexSide = in.nextDouble();
+        System.out.print("Enter a side length: ");
+        double hexSide = in.nextDouble();
 
-        // double hexArea = (3*Math.sqrt(3))/2*Math.pow(hexSide,2);
-        // double hexPerimeter = 6*hexSide;
+        double hexArea = (3*Math.sqrt(3))/2*Math.pow(hexSide,2);
+        double hexPerimeter = 6*hexSide;
 
-        // System.out.printf("\nAREA      : %.2f\n", hexArea);
-        // System.out.printf("PERIMETER : %.2f\n\n", hexPerimeter);
+        System.out.printf("\nAREA      : %.2f\n", hexArea);
+        System.out.printf("PERIMETER : %.2f\n\n", hexPerimeter);
         
         /*
-         * Exercise 9.
+         * Exercise 9. GOOD
          * 
          * Given a string, reverse and print the first and second halves of that string.
          */
@@ -238,7 +230,7 @@ public class ProblemSet2 {
         String firstHalf = userString.substring(0,index);
         String secondHalf = userString.substring(index);
 
-        System.out.println(secondHalf+firstHalf);
+        System.out.println("\n" + secondHalf+firstHalf + "\n");
         
         /*
          * Exercise 10. GOOD
@@ -246,14 +238,14 @@ public class ProblemSet2 {
          * Given a first, middle, and last name, print the corresponding initials.
          */
         
-        // System.out.print("Enter your first name: ");
-        // String fname = in.next();
-        // System.out.print("Enter your middle name: ");
-        // String mname = in.next();
-        // System.out.print("Enter your last name: ");
-        // String lname = in.next();
+        System.out.print("Enter your first name: ");
+        String fname = in.next();
+        System.out.print("Enter your middle name: ");
+        String mname = in.next();
+        System.out.print("Enter your last name: ");
+        String lname = in.next();
 
-        // System.out.println(fname.substring(0,1) + mname.substring(0,1) + lname.substring(0,1));
+        System.out.println("\n" + fname.substring(0,1) + mname.substring(0,1) + lname.substring(0,1) + "\n");
 
         
         in.close();
